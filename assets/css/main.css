@@ -1,6 +1,10 @@
+body{
+    height: 9000px;
+}
 .header{
     padding: 37px 0;
-
+position: fixed;
+width: 100%;
 
 }
 
@@ -13,6 +17,15 @@ gap: 36px;
 }
 .header nav ul a{
     color: #0D0E43;
+}
+.header nav ul a{
+    transition: color 1s;
+}
+.header nav ul:hover .nav-home{
+    color: black;
+}
+.header nav ul a:hover{
+    color: var(--maincolor);
 }
 .header nav ul .nav-home{
     color: var(--maincolor);
