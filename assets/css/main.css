@@ -1,0 +1,43 @@
+.header{
+    padding: 37px 0;
+
+
+}
+
+.header nav ul{
+display: flex;
+gap: 36px;
+   font-family: "Lato", sans-serif;
+   
+   
+}
+.header nav ul a{
+    color: #0D0E43;
+}
+.header nav ul .nav-home{
+    color: var(--maincolor);
+}
+.header nav ul i{
+font-size: smaller;
+
+color: var(--maincolor);
+}
+.header .search form{
+    display: flex;
+    
+
+}
+.header .search form input{
+    border: 0;
+    padding: 0 30px;
+}
+.header .search form button{
+    border: 0;
+    padding: 9px 7px 5px 7px;
+    background-color: var(--maincolor);
+    
+}
+.header .search form{
+    border: 2px solid #E7E6EF;
+    
+}
