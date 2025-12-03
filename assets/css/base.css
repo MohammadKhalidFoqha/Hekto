@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    max-width: 1200px;
+    width: calc(100% - 180px);
     margin: auto;
 }
 a{
@@ -17,6 +17,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 :root{
     --maincolor:#FB2E86;
