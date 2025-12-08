@@ -141,7 +141,32 @@
     font-family: "Josefin Sans", sans-serif;
     border-radius: 5px;
 }
+@media screen and (max-width:650px) {
+    .Newslater{
+    height: 250px;
+}
+}
+@media screen and (max-width:500px) {
+    .Newslater{
+    height: 200px;
+}
+.newsletter-banner .Newslater-Content{
+    gap: 13px;
+}
+}
+@media screen and (max-width:420px) {
+        .Newslater{
+    height: 170px;
+}
+.newsletter-banner .Newslater-Content h2{
+    width: 300px;
+    line-height: 26px;
+}
+.newsletter-banner .Newslater-Content a{
+    padding: 7px 18px 5px;    
+}
 
+}
 .footer-start{
     display: flex;
     flex-direction: column;
