@@ -435,9 +435,71 @@ h6 {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+@media screen and (max-width:1150px) {
+.Leatest-Blog .Blog-item .Blog-content .info {
+    
+    gap: 16px;
+}
+    
 
+}
 
+@media screen and (max-width:1100px) {
+.Leatest-Blog .Blog-item .Blog-content .info {
+    
+    flex-direction: column;
+    gap: 10px;
+}
+    
 
+}
+@media screen and (max-width:1000px) {
+.Leatest-Blog .Blog-item {
+    gap: 10px;
+    padding-bottom: 20px;
+
+}
+.Leatest-Blog .Blog-item .Blog-content {
+    gap: 10px;
+    padding: 0 10px;
+
+}
+ .Leatest-Blog .Blog-item .Blog-content p {
+    line-height: 20px;
+    
+}   
+.Leatest-Blog h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+.Leatest-Blog .Blog-item .Blog-content h3{
+    font-size: 18px;
+}
+
+}
+@media screen and (max-width:900px) {
+
+    .Leatest-Blog .Blog-item {
+    width: calc((100% - 40px) /2);
+    
+}
+
+}
+@media screen and (max-width:700px) {
+
+    .Leatest-Blog .Blog-item {
+    width: 100%;
+    
+}
+.Leatest-Blog .Blog-item .Blog-content .info {
+    flex-direction: row;
+    gap: 25px;
+}
+.Leatest-Blog h2 {
+    font-weight: 700;
+    font-size: 26px;
+}
+}
 
 .footer-start {
     display: flex;
