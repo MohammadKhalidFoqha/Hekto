@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* scroll-behavior: smooth; */
 }
 .container{
     width: calc(100% - 180px);
@@ -21,4 +22,13 @@ ul{
 }
 :root{
     --maincolor:#FB2E86;
+    --mainfont:"Lato", sans-serif;
+    --secfont:"Josefin Sans", sans-serif;
 }
+button{
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+
