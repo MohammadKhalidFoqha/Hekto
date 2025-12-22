@@ -284,6 +284,55 @@ h6 {
     }
 }
 
+.Trending-Products{
+padding: 40px 0px;
+}
+.Trending-Products h2{
+    text-align: center;
+    color: #151875;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.Trending-Products .element{
+    padding: 30px 0;
+    width: calc((100% - 120px) / 4);
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.Trending-Products .element .element-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Trending-Products .element .element-info .element-name p{
+color: #151875;
+font-family: var(--mainfont);
+font-weight: 700;
+font-size: 16px;
+}
+.Trending-Products .element .element-info .element-price{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    font-family: var(--secfont);
+    font-size: 14px;
+}
+.Trending-Products .element .element-info .element-price span:first-of-type{
+    color: #151875;
+}
+.Trending-Products .element .element-info .element-price span:last-of-type{
+    color: rgba(21, 24, 117, 0.3);
+    text-decoration: line-through;
+}
+
+
+
 .Newslater {
     width: 100%;
     background-image: url(./../image/public/newlater.png);
