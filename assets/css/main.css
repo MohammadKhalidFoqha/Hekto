@@ -297,7 +297,7 @@ padding: 40px 0px;
 .Trending-Products .element{
     padding: 30px 0;
     width: calc((100% - 120px) / 4);
-    max-width: 280px;
+    /* max-width: 280px; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -331,6 +331,54 @@ font-size: 16px;
     text-decoration: line-through;
 }
 
+@media screen and (max-width:1380px) {
+    .Trending-Products .element{
+    padding: 20px 0;
+    gap: 5px;
+}
+}
+@media screen and (max-width:1350px) {
+        .Trending-Products .element{
+            width: calc((100% - 36px) / 4);
+}
+.Trending-Products .row{
+    justify-content: center;
+    gap: 12px;
+}
+}
+@media screen and (max-width:1250px) {
+        .Trending-Products .element{
+            width: calc((100% - 12px) / 2);
+            max-width: 360px;
+}
+.Trending-Products .row{
+    justify-content: center;
+    gap: 12px;
+}
+}
+@media screen and (max-width:700px) {
+        .Trending-Products .element{
+            width: 100%;
+            max-width: 465px;
+}
+.Trending-Products h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.Trending-Products .element img{
+    width: 300px;
+}
+}
+@media screen and (max-width:400px) {
+
+.Trending-Products h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.Trending-Products .element img{
+    width: 230px;
+}
+}
 
 
 .Newslater {
