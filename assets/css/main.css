@@ -279,9 +279,7 @@ h6 {
     gap: 15px;
     border-radius: 10px;
 }
-*{
-    /* outline: auto; */
-}
+
 .Top-Categories .category .category-info{
     display: flex;
     gap: 7px;
@@ -378,6 +376,7 @@ height: 317px;
 height: 272px;
     
     
+}
 }
 @media screen and (max-width:750px) {
 .Top-Categories .category .category-image{
