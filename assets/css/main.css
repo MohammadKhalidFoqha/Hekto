@@ -19,10 +19,12 @@ h6 {
 
 .header {
     padding: 37px 0;
-    /* position: fixed; */
     width: 100%;
-
-
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    background-color: white;
 }
 
 .header .nav-home {
@@ -80,6 +82,7 @@ h6 {
 .menu {
     display: none;
 }
+
 @media screen and (max-width:1100px) {
 
     .header nav ul,
@@ -119,30 +122,21 @@ h6 {
     background-color: #F2F0FF;
 }
 
-.hero .hero-content,
-.hero-image {
-    width: calc((100% - 60px)/ 2);
-
-}
-.hero .hero-content{
+.hero .hero-content  {
     flex-grow: 1;
     max-width: 65%;
 }
-.hero .hero-image{
+
+.hero .hero-image {
     width: 30%;
 }
-/* .hero .row {
 
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-
-} */
 
 .hero .hero-content {
     display: flex;
 }
-.hero .hero-content .hero-text{
+
+.hero .hero-content .hero-text {
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -155,12 +149,14 @@ h6 {
     color: var(--maincolor);
     width: fit-content;
 }
-
+*{
+    /* outline: auto; */
+}
 .hero .title {
     font-size: 55px;
     font-weight: 370;
     line-height: 1.6;
-    /* width: 640px; */
+
 }
 
 .hero .hero-para {
@@ -169,7 +165,7 @@ h6 {
 
 .hero .hero-image img {
     width: 100%;
-    
+
 }
 
 
@@ -181,23 +177,79 @@ h6 {
     color: white;
     border-radius: 5px;
 }
-.hero .hero-content .hero-lamp img{
-position: relative;
-bottom: 30px;
-animation: slideinfrombuttom 2s;
+
+.hero .hero-content .hero-lamp img {
+    position: relative;
+    bottom: 30px;
+    animation: slideinfrombuttom 2s;
 }
-@keyframes slideinfrombuttom{
-    from{
+
+@keyframes slideinfrombuttom {
+    from {
         transform: translateY(-100%);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
 
+@media screen and (max-width:1320px) {
+.hero .title {
+    font-size: 45px;
+    line-height: 1.2;
+
+}
+}
+@media screen and (max-width:1220px) {
+.hero .hero-content .hero-lamp {
+    display: none;
+}
+}
+@media screen and (max-width:1000px) {
+ .hero .hero-content .hero-text {
+    gap: 14px;
+    width: 490px;
+    
+}
+.hero .title {
+    font-size: 35px;
+
+}
+
+}
+@media screen and (max-width:900px) {
+.hero .hero-content,
+.hero .hero-image  {
+    width: 100%;
+}
+.hero .hero-image img {
+    width: 55%;
+
+}
+.hero .row{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ .hero .hero-content .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.hero .hero-image{
+    order: -1;
+}
+
+}
 
 
 
@@ -366,24 +418,24 @@ animation: slideinfrombuttom 2s;
     }
 }
 
-.Shopex-offers{
+.Shopex-offers {
     padding: 40px 0;
     text-align: center;
 }
 
-.Shopex-offers h2{
+.Shopex-offers h2 {
     margin-bottom: 35px;
-        color: #151875;
-font-family: var(--secfont);
-font-weight: 700;
-font-size: 32px;
+    color: #151875;
+    font-family: var(--secfont);
+    font-weight: 700;
+    font-size: 32px;
 }
 
-.Shopex-offers .row{
-gap: 30px;
+.Shopex-offers .row {
+    gap: 30px;
 }
 
-.Shopex-offers .item-offer{
+.Shopex-offers .item-offer {
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -393,66 +445,75 @@ gap: 30px;
 }
 
 
-.Shopex-offers .item-offer .info-offer{
+.Shopex-offers .item-offer .info-offer {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.Shopex-offers .item-offer h3{
+
+.Shopex-offers .item-offer h3 {
     color: #151875;
     font-family: var(--secfont);
     font-weight: 700;
 }
-.Shopex-offers .item-offer p{
+
+.Shopex-offers .item-offer p {
     color: #8A8FB9;
     line-height: 40px;
     font-family: var(--mainfont);
 }
 
 @media screen and (max-width:1000px) {
-  .Shopex-offers .item-offer{
-    gap: 15px;
-    width: calc((100% - 30px) / 2);
-    padding: 30px 15px;
-}  
-}
-@media screen and (max-width:700px) {
-  .Shopex-offers .item-offer{
-    gap: 15px;
-    width: 100%;
-    
-    padding: 40 0px;
-    
-}  
-.Shopex-offers .row{
-gap: 20px;
-}
-.Shopex-offers h2{
-margin-bottom: 30px;
-        font-size: 28px;    
-}
-@media screen and (max-width:500px) {
-
-
-    .Shopex-offers h2 {
-        margin-bottom: 20px;
-        font-size: 25px;
-        
+    .Shopex-offers .item-offer {
+        gap: 15px;
+        width: calc((100% - 30px) / 2);
+        padding: 30px 15px;
     }
 }
 
+@media screen and (max-width:700px) {
+    .Shopex-offers .item-offer {
+        gap: 15px;
+        width: 100%;
+
+        padding: 40 0px;
+
+    }
+
+    .Shopex-offers .row {
+        gap: 20px;
+    }
+
+    .Shopex-offers h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    @media screen and (max-width:500px) {
+
+
+        .Shopex-offers h2 {
+            margin-bottom: 20px;
+            font-size: 25px;
+
+        }
+    }
+
 }
-.Trending-Products{
-padding: 40px 0px;
+
+.Trending-Products {
+    padding: 40px 0px;
 }
-.Trending-Products h2{
+
+.Trending-Products h2 {
     text-align: center;
     color: #151875;
     font-weight: 700;
     font-size: 35px;
     margin-bottom: 35px;
 }
-.Trending-Products .element{
+
+.Trending-Products .element {
     padding: 30px 0;
     width: calc((100% - 120px) / 4);
     /* max-width: 280px; */
@@ -463,79 +524,92 @@ padding: 40px 0px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.Trending-Products .element .element-info{
+.Trending-Products .element .element-info {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.Trending-Products .element .element-info .element-name p{
-color: #151875;
-font-family: var(--mainfont);
-font-weight: 700;
-font-size: 16px;
+
+.Trending-Products .element .element-info .element-name p {
+    color: #151875;
+    font-family: var(--mainfont);
+    font-weight: 700;
+    font-size: 16px;
 }
-.Trending-Products .element .element-info .element-price{
+
+.Trending-Products .element .element-info .element-price {
     display: flex;
     gap: 15px;
     justify-content: center;
     font-family: var(--secfont);
     font-size: 14px;
 }
-.Trending-Products .element .element-info .element-price span:first-of-type{
+
+.Trending-Products .element .element-info .element-price span:first-of-type {
     color: #151875;
 }
-.Trending-Products .element .element-info .element-price span:last-of-type{
+
+.Trending-Products .element .element-info .element-price span:last-of-type {
     color: rgba(21, 24, 117, 0.3);
     text-decoration: line-through;
 }
 
 @media screen and (max-width:1380px) {
-    .Trending-Products .element{
-    padding: 20px 0;
-    gap: 5px;
+    .Trending-Products .element {
+        padding: 20px 0;
+        gap: 5px;
+    }
 }
-}
+
 @media screen and (max-width:1350px) {
-        .Trending-Products .element{
-            width: calc((100% - 36px) / 4);
+    .Trending-Products .element {
+        width: calc((100% - 36px) / 4);
+    }
+
+    .Trending-Products .row {
+        justify-content: center;
+        gap: 12px;
+    }
 }
-.Trending-Products .row{
-    justify-content: center;
-    gap: 12px;
-}
-}
+
 @media screen and (max-width:1250px) {
-        .Trending-Products .element{
-            width: calc((100% - 12px) / 2);
-            max-width: 360px;
+    .Trending-Products .element {
+        width: calc((100% - 12px) / 2);
+        max-width: 360px;
+    }
+
+    .Trending-Products .row {
+        justify-content: center;
+        gap: 12px;
+    }
 }
-.Trending-Products .row{
-    justify-content: center;
-    gap: 12px;
-}
-}
+
 @media screen and (max-width:700px) {
-        .Trending-Products .element{
-            width: 100%;
-            max-width: 465px;
+    .Trending-Products .element {
+        width: 100%;
+        max-width: 465px;
+    }
+
+    .Trending-Products h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .Trending-Products .element img {
+        width: 300px;
+    }
 }
-.Trending-Products h2{
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-.Trending-Products .element img{
-    width: 300px;
-}
-}
+
 @media screen and (max-width:400px) {
 
-.Trending-Products h2{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.Trending-Products .element img{
-    width: 230px;
-}
+    .Trending-Products h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .Trending-Products .element img {
+        width: 230px;
+    }
 }
 
 
@@ -690,70 +764,80 @@ font-size: 16px;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+
 @media screen and (max-width:1150px) {
-.Leatest-Blog .Blog-item .Blog-content .info {
-    
-    gap: 16px;
-}
-    
+    .Leatest-Blog .Blog-item .Blog-content .info {
+
+        gap: 16px;
+    }
+
 
 }
 
 @media screen and (max-width:1100px) {
-.Leatest-Blog .Blog-item .Blog-content .info {
-    
-    flex-direction: column;
-    gap: 10px;
-}
-    
+    .Leatest-Blog .Blog-item .Blog-content .info {
+
+        flex-direction: column;
+        gap: 10px;
+    }
+
 
 }
+
 @media screen and (max-width:1000px) {
-.Leatest-Blog .Blog-item {
-    gap: 10px;
-    padding-bottom: 20px;
+    .Leatest-Blog .Blog-item {
+        gap: 10px;
+        padding-bottom: 20px;
+
+    }
+
+    .Leatest-Blog .Blog-item .Blog-content {
+        gap: 10px;
+        padding: 0 10px;
+
+    }
+
+    .Leatest-Blog .Blog-item .Blog-content p {
+        line-height: 20px;
+
+    }
+
+    .Leatest-Blog h2 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .Leatest-Blog .Blog-item .Blog-content h3 {
+        font-size: 18px;
+    }
 
 }
-.Leatest-Blog .Blog-item .Blog-content {
-    gap: 10px;
-    padding: 0 10px;
 
-}
- .Leatest-Blog .Blog-item .Blog-content p {
-    line-height: 20px;
-    
-}   
-.Leatest-Blog h2 {
-    font-weight: 700;
-    font-size: 30px;
-}
-.Leatest-Blog .Blog-item .Blog-content h3{
-    font-size: 18px;
-}
-
-}
 @media screen and (max-width:900px) {
 
     .Leatest-Blog .Blog-item {
-    width: calc((100% - 40px) /2);
-    
-}
+        width: calc((100% - 40px) /2);
+
+    }
 
 }
+
 @media screen and (max-width:700px) {
 
     .Leatest-Blog .Blog-item {
-    width: 100%;
-    
-}
-.Leatest-Blog .Blog-item .Blog-content .info {
-    flex-direction: row;
-    gap: 25px;
-}
-.Leatest-Blog h2 {
-    font-weight: 700;
-    font-size: 26px;
-}
+        width: 100%;
+
+    }
+
+    .Leatest-Blog .Blog-item .Blog-content .info {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .Leatest-Blog h2 {
+        font-weight: 700;
+        font-size: 26px;
+    }
 }
 
 .footer-start {
