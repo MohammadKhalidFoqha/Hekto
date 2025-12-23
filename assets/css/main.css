@@ -284,6 +284,51 @@ h6 {
     }
 }
 
+.Shopex-offers{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.Shopex-offers h2{
+    margin-bottom: 35px;
+        color: #151875;
+font-family: var(--secfont);
+font-weight: 700;
+font-size: 32px;
+}
+
+.Shopex-offers .row{
+gap: 30px;
+}
+
+.Shopex-offers .item-offer{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: calc((100% - 90px) / 4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px 15px;
+}
+.Shopex-offers .item-offer img{
+    
+}
+
+.Shopex-offers .item-offer .info-offer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Shopex-offers .item-offer h3{
+    color: #151875;
+    font-family: var(--secfont);
+    font-weight: 700;
+}
+.Shopex-offers .item-offer p{
+    color: #8A8FB9;
+    line-height: 40px;
+    font-family: var(--mainfont);
+}
+
 .Trending-Products{
 padding: 40px 0px;
 }
