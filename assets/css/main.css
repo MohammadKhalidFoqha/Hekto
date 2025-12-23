@@ -279,6 +279,9 @@ h6 {
     gap: 15px;
     border-radius: 10px;
 }
+*{
+    /* outline: auto; */
+}
 .Top-Categories .category .category-info{
     display: flex;
     gap: 7px;
@@ -336,6 +339,83 @@ background-color: #08D15F;
     font-family: var(--secfont);
     color: #151875;
     font-size: 18px;
+}
+
+
+@media screen and (max-width:1350px) {
+.Top-Categories .category .category-image{
+    width: 248px;
+height: 247px;
+    
+    
+}
+}
+@media screen and (max-width:1250px) {
+.Top-Categories .category{
+
+ width: calc((100% - 40px) / 2);
+    
+}
+.Top-Categories .category .category-image{
+
+    width: 358px;
+height: 357px;
+    
+    
+}
+}
+@media screen and (max-width:990px) {
+.Top-Categories .category .category-image{
+    width: 318px;
+height: 317px;
+    
+    
+}
+}
+@media screen and (max-width:850px) {
+.Top-Categories .category .category-image{
+    width: 273px;
+height: 272px;
+    
+    
+}
+@media screen and (max-width:750px) {
+.Top-Categories .category .category-image{
+
+    width: 243px;
+height: 242px;
+    
+    
+}
+}
+@media screen and (max-width:700px) {
+.Top-Categories .category{
+
+ width: 100%;
+    
+}
+.Top-Categories .category .category-image{
+
+    width: 403px;
+height: 402px;
+    
+    
+}
+}
+@media screen and (max-width:470px) {
+.Top-Categories .category .category-image{
+
+    width: 303px;
+height: 302px;
+    
+    
+}
+.Top-Categories h2{
+    
+    
+    font-size: 28px;
+    
+}
 }
 
 
