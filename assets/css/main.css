@@ -80,9 +80,6 @@ h6 {
 .menu {
     display: none;
 }
-
-
-
 @media screen and (max-width:1100px) {
 
     .header nav ul,
@@ -117,6 +114,91 @@ h6 {
 /* *{
     outline: auto;
 } */
+.hero {
+    padding: 30px 0;
+    background-color: #F2F0FF;
+}
+
+.hero .hero-content,
+.hero-image {
+    width: calc((100% - 60px)/ 2);
+
+}
+.hero .hero-content{
+    flex-grow: 1;
+    max-width: 65%;
+}
+.hero .hero-image{
+    width: 30%;
+}
+/* .hero .row {
+
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+} */
+
+.hero .hero-content {
+    display: flex;
+}
+.hero .hero-content .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: self-start;
+}
+
+.hero .subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--maincolor);
+    width: fit-content;
+}
+
+.hero .title {
+    font-size: 55px;
+    font-weight: 370;
+    line-height: 1.6;
+    /* width: 640px; */
+}
+
+.hero .hero-para {
+    color: #8A8FB9;
+}
+
+.hero .hero-image img {
+    width: 100%;
+    
+}
+
+
+.hero .hero-content a {
+    border: 1px solid var(--maincolor);
+    width: fit-content;
+    background-color: var(--maincolor);
+    padding: 10px 24px 14px;
+    color: white;
+    border-radius: 5px;
+}
+.hero .hero-content .hero-lamp img{
+position: relative;
+bottom: 30px;
+animation: slideinfrombuttom 2s;
+}
+@keyframes slideinfrombuttom{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
 
 
 .Featured-Products {
@@ -359,7 +441,7 @@ margin-bottom: 30px;
     }
 }
 
-
+}
 .Trending-Products{
 padding: 40px 0px;
 }
