@@ -309,9 +309,7 @@ gap: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     padding: 40px 15px;
 }
-.Shopex-offers .item-offer img{
-    
-}
+
 
 .Shopex-offers .item-offer .info-offer{
     display: flex;
@@ -328,6 +326,39 @@ gap: 30px;
     line-height: 40px;
     font-family: var(--mainfont);
 }
+
+@media screen and (max-width:1000px) {
+  .Shopex-offers .item-offer{
+    gap: 15px;
+    width: calc((100% - 30px) / 2);
+    padding: 30px 15px;
+}  
+}
+@media screen and (max-width:700px) {
+  .Shopex-offers .item-offer{
+    gap: 15px;
+    width: 100%;
+    
+    padding: 40 0px;
+    
+}  
+.Shopex-offers .row{
+gap: 20px;
+}
+.Shopex-offers h2{
+margin-bottom: 30px;
+        font-size: 28px;    
+}
+@media screen and (max-width:500px) {
+
+
+    .Shopex-offers h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+        
+    }
+}
+
 
 .Trending-Products{
 padding: 40px 0px;
